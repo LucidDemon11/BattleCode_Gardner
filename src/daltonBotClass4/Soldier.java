@@ -22,7 +22,8 @@ public class Soldier extends Robot {
                     if (robotController.canFireSingleShot()) {
                         robotController.fireSingleShot(robotController.getLocation().directionTo(robots[0].location));
                     }
-                    tryMove(robotController.getLocation().directionTo(robots[0].location));
+                    //Commented out due to running into death of bullets of other bots.
+                    //tryMove(robotController.getLocation().directionTo(robots[0].location));
                 }
                 else {
                     if (!tryMove(soldierDir)) {
